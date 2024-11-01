@@ -1,0 +1,45 @@
+body{
+    background: rgb(210,174,238);
+    background: radial-gradient(circle, rgba(210,174,238,1) 0%, rgba(148,152,233,1) 100%);
+}
+header{
+    padding: 25px;
+    background-color: blueviolet;
+    border: solid 3px;
+    border-color: lavender;
+}
+#name_text{
+    display: flex;
+    align-items: center;
+}
+#art_Carousel{
+    align-items: center;
+}
+#Bio_Text{
+    margin: 50px;
+    padding:25px;
+}
+#home{
+    background-color: blueviolet;
+    border: solid 3px;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+#home-tab{
+    color: white;
+    background-color: blueviolet;
+    border-color: lavender;
+}
+#contact{
+    background-color:blueviolet;
+    border: solid 3px;
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+#contact-tab{
+    color: white;
+    background-color: blueviolet;
+    border-color: lavender;
+}
