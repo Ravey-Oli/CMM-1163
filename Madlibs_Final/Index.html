@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mad Libs Story</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Madlibs_Styles.css">
+    
+    <script src="Madlibs.js"></script>
+
+    <!--Link to Bootstrap-->
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    
+</head>
+
+<body>
+    <div class="container-fluid mt-5">
+        <h1 class="text-center">Fill in the blanks for Escape the ad invasion.!</h1>
+        <p class="text-center"><i>An interactve sci-fi expereince</i></p>
+        <div id="inputs" class="mt-4">
+            <!-- Form starts here -->
+            <form>
+                <div class="row">
+                <div class="col-12 col-sm-12">
+                <div class="form-group">
+                    <label for="name">Person One Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter a person's name">
+                </div></div></div>
+                
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                    <div class="form-group">
+                        <label for="name">Person Two Name:</label>
+                        <input type="text" class="form-control" id="name2" placeholder="Enter a person's name">
+                    </div></div></div>
+
+                <div class="row">
+                <div class="col-12 col-sm-12">
+                <div class="form-group">
+                    <label for="city">Dystopian City:</label>
+                    <input type="text" class="form-control" id="city" placeholder="Enter a city">
+                </div></div></div>
+            
+            <div class="row">
+            <div class="col-md-4 col-sm-4 p-4">
+            <h3>Additional Variables</h3>
+            </div></div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="emotionalstateFormControlSelect1">1. Emotional State</label>
+                    <select class="form-control" id="emotionalstateFormControlSelect1">
+                      <option>Dread</option>
+                      <option>Stress</option>
+                    </select>
+                </div></div>
+
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="MorningStateFormControlSelect">2. Morning State</label>
+                    <select class="form-control" id="MorningStateFormControlSelect">
+                      <option>Sunny</option>
+                      <option>Gloomy</option>
+                      <option>Calm</option>
+                    </select>
+                </div></div>
+
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="WalkingStateFormControlSelect">3. Walking State</label>
+                    <select class="form-control" id="WalkingStateFormControlSelect">
+                      <option>Walk</option>
+                      <option>Stroll</option>
+                      <option>Wonder</option>
+                    </select>
+            </div></div></div>
+                
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="StreetStateFormControlSelect">4. Street State</label>
+                    <select class="form-control" id="StreetStateFormControlSelect">
+                      <option>Vibrant</option>
+                      <option>Busy</option>
+                      <option>Populous</option>
+                    </select>
+                </div></div>
+            
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="SuspicionStateFormControlSelect">5. Suspicion State</label>
+                    <select class="form-control" id="SuspicionStateFormControlSelect">
+                      <option>Odd</option>
+                      <option>Concerning</option>
+                      <option>Suspicious</option>
+                    </select>
+                </div></div>
+
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="ConversationStateFormControlSelect">6. Conversation State</label>
+                    <select class="form-control" id="ConversationStateFormControlSelect">
+                      <option>Casual</option>
+                      <option>Typical</option>
+                      <option>Polite</option>
+                    </select>
+                </div></div>
+            </div>
+        
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="IntrusionStateFormControlSelect">7. Intrusion State</label>
+                    <select class="form-control" id="IntrusionStateFormControlSelect">
+                      <option>Annoying</option>
+                      <option>Irritating</option>
+                      <option>Infuriating</option>
+                      <option>Bothersome</option>
+                      <option>Intrusive</option>
+                    </select>
+                </div></div>
+
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="SenseStateFormControlSelect">8. Sense State</label>
+                    <select class="form-control" id="SenseStateFormControlSelect">
+                      <option>Eyes</option>
+                      <option>Senses</option>
+                      <option>Vision</option>
+                    </select>
+                </div></div>
+                
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="ApproachabilitySateFormControlSelect">9. Approachability State</label>
+                    <select class="form-control" id="ApproachabilitySateFormControlSelect">
+                      <option>Distant</option>
+                      <option>Unapproachable</option>
+                      <option>withdrawn</option>
+                    </select>
+                </div></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="FeelingStateFormControlSelect">10. Feeling State</label>
+                    <select class="form-control" id="FeelingStateFormControlSelect">
+                      <option>Emotionless</option>
+                      <option>Apathetic</option>
+                      <option>Dispassionate</option>
+                    </select>
+               </div></div>
+
+               <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="MessageDescriptionFormControlSelect1">11. Message Description</label>
+                    <select class="form-control" id="MessageDescriptionFormControlSelect1">
+                      <option>Constant</option>
+                      <option>Never-ending</option>
+                    </select>
+                </div></div>
+
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="WorldDescriptionFormControlSelect1">12. World Description</label>
+                    <select class="form-control" id="WorldDescriptionFormControlSelect1">
+                      <option>World</option>
+                      <option>Environment</option>
+                    </select>
+                </div></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="AdDescriptionFormControlSelect1">13. Ad Description</label>
+                    <select class="form-control" id="AdDescriptionFormControlSelect1">
+                      <option>Screen</option>
+                      <option>Program</option>
+                      <option>Broadcast</option>
+                    </select>
+                </div></div>
+
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="ControllingDescriptionFormControlSelect1">14. Controlling Description</label>
+                    <select class="form-control" id="ControllingDescriptionFormControlSelect1">
+                      <option>Controlling</option>
+                      <option>Overbearing</option>
+                    </select>
+                </div></div>
+
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="StreetDescriptionFormControlSelect">15. Street Description</label>
+                    <select class="form-control" id="StreetDescriptionFormControlSelect">
+                      <option>Corner</option>
+                      <option>Street</option>
+                      <option>Intersection</option>
+                    </select>
+                </div></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="CafeDescriptionFormControlSelect">16. Cafe Description</label>
+                    <select class="form-control" id="CafeDescriptionFormControlSelect">
+                      <option>Quaint</option>
+                      <option>Unassuming</option>
+                    </select>
+                </div></div>
+
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="InteriorDescriptionFormControlSelect">17. Interior Description</label>
+                    <select class="form-control" id="InteriorDescriptionFormControlSelect">
+                      <option>Simple</option>
+                      <option>Rustic</option>
+                    </select>
+                </div></div>
+
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="BaristaDescriptionFormControlSelect">18. Barista Description</label>
+                    <select class="form-control" id="BaristaDescriptionFormControlSelect">
+                      <option>Brewing</option>
+                      <option>Creating</option>
+                    </select>
+                </div></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="EmotionDescriptionFormControlSelect2">19. Emotion Description</label>
+                    <select class="form-control" id="EmotionDescriptionFormControlSelect2">
+                    <option>Nice</option>
+                    <option>Blissful</option>
+                    </select>
+                </div></div>
+
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="ScentDescriptionFormControlSelect">20. Scent Description</label>
+                    <select class="form-control" id="ScentDescriptionFormControlSelect">
+                    <option>Unpleasant</option>
+                    <option>Artificial</option>
+                    </select>
+                </div></div>
+
+                <div class="col-md-4 col-sm-3">
+                    <div class="form-group">
+                        <label for="ResolveDescriptionFormControlSelect">21. Resolve Description</label>
+                        <select class="form-control" id="ResolveDescriptionFormControlSelect">
+                        <option>Meaning</option>
+                        <option>Deep</option>
+                        </select>
+                    </div></div></div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-sm-3">
+                <div class="form-group">
+                    <label for="SpaceDescriptionFormControlSelect">22. Space Description</label>
+                    <select class="form-control" id="SpaceDescriptionFormControlSelect">
+                    <option>Reclaiming</option>
+                    <option>Liberating</option>
+                    <option>Protecting</option>
+                    </select>
+                </div></div>
+            
+            <div class="col-md-4 col-sm-3">
+            <div class="form-group">
+                <label for="AdDescriptionFormControlSelect2">23. Ad free Description</label>
+                <select class="form-control" id="AdDescriptionFormControlSelect2">
+                <option>Space</option>
+                <option>Environment</option>
+                </select>
+            </div></div>
+
+            <div class="col-md-4 col-sm-3">
+            <div class="form-group">
+                <label for="SenseDescriptionFormControlSelect">24. Sense Description</label>
+                <select class="form-control" id="SenseDescriptionFormControlSelect">
+                <option>Artificial</option>
+                <option>Unpleasant</option>
+                <option>3</option>
+                </select>
+            </div></div></div>
+
+            <div class="row">
+            <div class="col-md-4 col-sm-3">
+            <div class="form-group">
+                <label for="TacticsDescriptionFormControlSelect">25. Tactics Description</label>
+                <select class="form-control" id="TacticsDescriptionFormControlSelect">
+                <option>Dubious</option>
+                <option>Manipulative</option>
+                </select>
+            </div></div>
+
+            <div class="col-md-4 col-sm-3">
+            <div class="form-group">
+                <label for="EscapeDescriptionFormControlSelect">26. Escape Description</label>
+                <select class="form-control" id="EscapeDescriptionFormControlSelect">
+                <option>Grasp</option>
+                <option>clutches</option>
+                </select>
+            </div></div>
+
+            <div class="col-md-4 col-sm-3">
+            <div class="form-group">
+                <label for="MessagesDescriptionFormControlSelect">27. Messages Description</label>
+                <select class="form-control" id="MessagesDescriptionFormControlSelect">
+                <option>Relentless</option>
+                <option>Constant</option>
+                </select>
+            </div></div></div>
+
+            <div class="row">
+            <div class="col-md-4 col-sm-3">
+            <div class="form-group">
+                <label for="PressureDescriptionFormControlSelect">28. Pressure Description</label>
+                <select class="form-control" id="PressureDescriptionFormControlSelect">
+                <option>Overwhelming</option>
+                <option>Corporate</option>
+                </select>
+            </div></div>
+
+
+            <div class="col-md-4 col-sm-3">
+            <div class="form-group">
+                <label for="ExploreDescriptionFormControlSelect">29. Explore Description</label>
+                <select class="form-control" id="ExploreDescriptionFormControlSelect">
+                <option>City</option>
+                <option>Country</option>
+                </select>
+            </div></div>
+            
+            <div class="col-md-4 col-sm-3">
+            <div class="form-group">
+                <label for="ConnectionDescriptionFormControlSelect">30. Connection Description</label>
+                <select class="form-control" id="ConnectionDescriptionFormControlSelect">
+                <option>Authentic</option>
+                <option>Genuine</option>
+                </select>
+            </div></div></div>
+
+            <div class="col-12 col-sm-12 p-4">
+            <button type="button" class="btn btn-primary btn-block" onclick="generateStory()">Generate Story</button>
+            </div>
+            </form>
+        </div>
+
+        <!-- Generated story display -->
+        <div id="story" class="mt-4" style="display: none;">
+            <h2 class="text-center">Your Escape the ad invasion Story</h2>
+            <p id="madLibStory" class="lead text-center"></p>
+        </div>
+
+        <!-- Reset Button -->
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-12 col-sm-12 p-4">
+            <button id="reset" class="btn btn-secondary btn-block" onclick="resetForm()" style="display: none;">Reset</button>
+        </div></div></div>
+    </div>
+
+</body>
+</html>
